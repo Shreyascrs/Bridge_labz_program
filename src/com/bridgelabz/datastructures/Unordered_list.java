@@ -4,9 +4,14 @@ package com.bridgelabz.datastructures;
 
 import java.util.Scanner;
 
-
-
-
+/********************************************************************************************
+ * 
+ * @purpose 	:unorderd list
+ * @author 		:Shreyas CR
+ * @version 	: 1.0
+ * @since		: 02-04-2019
+ * 
+ ********************************************************************************************/
 
 public class Unordered_list {
 	

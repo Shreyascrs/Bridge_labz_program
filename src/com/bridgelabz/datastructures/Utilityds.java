@@ -83,7 +83,7 @@ public class Utilityds {
 			 
 		 }
 		   
-		 /**
+		 	/**
 			 * to search the element in the list
 			 * 
 			 * @param key
@@ -452,18 +452,21 @@ public class Utilityds {
 		
 		
 		
-		@SuppressWarnings({ "rawtypes", "unused" })
+		@SuppressWarnings({ "rawtypes" })
 		public void dequeue()					// method to remove from list
 		{
 			Node n=front;						//reference of front node
-			if(size>0)
+			if(size==0)
 			{
-//				System.out.println("the element removed is "+n.data);
-				size--;
+				System.out.println("stack empty");
 			}else
 			{
-				System.out.println("no balance in bank");
+				System.out.println(n.data);
+				n=n.next;
+				front=n;
+				size--;
 			}
+			
 		}
 		
 		public boolean isEmpty()				//returns true if it is empty
@@ -660,7 +663,7 @@ public class Utilityds {
 	
 	public int[] checkanagaram(int[] arr)
 	{
-		int[] anagram=new int[112];
+		int[] anagram=new int[56];
 		int rev=0;
 		int n=0;
 		int k=0;
@@ -677,7 +680,7 @@ public class Utilityds {
 				if(arr[i]==rev)
 				{    
 					anagram[k++]=arr[i];
-					anagram[k++]=arr[j];
+					
 				}
 			}
 			

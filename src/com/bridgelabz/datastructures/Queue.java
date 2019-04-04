@@ -1,6 +1,14 @@
 package com.bridgelabz.datastructures;
 
 import java.util.Scanner;
+/********************************************************************************************
+ * 
+ * @purpose 	:Bank operation using queue
+ * @author 		:Shreyas CR
+ * @version 	: 1.0
+ * @since		: 01-04-2019
+ * 
+ ********************************************************************************************/
 
 public class Queue {
 public static void main(String[] args) {
@@ -14,11 +22,12 @@ public static void main(String[] args) {
 	int people=0;
 	Scanner scan=new Scanner(System.in);
 	
-	System.out.println("welcome to bank");
+	System.out.println("--------------welcome to bank--------------");
 	System.out.println("enter no of people in queue");
 	n=scan.nextInt();
 	while(n>0)
 	{
+		
 	System.out.println("enter 1 to deposit 0 to withdraw");
 	ch=scan.nextInt();
 	switch(ch)
@@ -41,7 +50,7 @@ public static void main(String[] args) {
 	default:System.out.println("enter valid number");
 	
 	}
-	scan.close();
+	
 	
 	}
 }

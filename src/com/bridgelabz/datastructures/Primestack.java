@@ -1,6 +1,14 @@
 package com.bridgelabz.datastructures;
 
 import com.bridgelabz.datastructures.Utilityds.Stack;
+/********************************************************************************************
+ * 
+ * @purpose 	:adding prime no to stack
+ * @author 		:Shreyas CR
+ * @version 	: 1.0
+ * @since		: 02-04-2019
+ * 
+ ********************************************************************************************/
 
 public class Primestack {
 public static void main(String[] args) {

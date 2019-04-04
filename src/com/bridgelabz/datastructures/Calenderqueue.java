@@ -2,6 +2,15 @@ package com.bridgelabz.datastructures;
 
 import com.bridgelabz.algorithmprograms.Utilityalg;
 
+/********************************************************************************************
+ * 
+ * @purpose 	:adding elements of calender to queue
+ * @author 		:Shreyas CR
+ * @version 	: 1.0
+ * @since		: 01-04-2019
+ * 
+ ********************************************************************************************/
+
 public class Calenderqueue {
 	public static void main(String[] args) {
 		
