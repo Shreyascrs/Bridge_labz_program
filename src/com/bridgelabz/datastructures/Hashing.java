@@ -27,13 +27,13 @@ public class Hashing {
 
 	@SuppressWarnings({ "rawtypes", "unchecked", "resource" })
 	public static void main(String[] args) throws FileNotFoundException {
-		Utilityds util=new Utilityds();
+Utilityds util=new Utilityds();
 		String path = "/home/admin1/Desktop/input/hashinput.txt";
 		String path1="/home/admin1/Desktop/input/hashoutput.txt";
 		
 		for (int i = 0; i < 11; i++) {
 			
-				slot[i] =util.new linkedlist();
+				slot[i] =new linkedlist();
 		}
 
 		BufferedReader br = new BufferedReader(new FileReader(path));

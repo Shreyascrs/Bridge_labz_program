@@ -10,15 +10,13 @@ public class Replacename {
 		String un=scan.nextLine();
 		un=un.trim();
 		if(un.length()>3)
-		{
-		
+		{		
 		System.out.println("hello "+un+", How are you?");
 		}
 		else
 		{
 			System.out.println("user name is not valid");
 		}
-
-	}
-	
+			scan.close();
+	}	
 }

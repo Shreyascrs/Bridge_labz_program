@@ -48,7 +48,8 @@ public static void main(String[] args) {
 		}
 		
 		String[] num=data.split(" ");
-		Arrays.sort(num);
+//		Arrays.sort(num);
+		
 		
 		for (int i = 0; i < num.length; i++) {
 			util.ll.add(num[i]);
@@ -95,5 +96,7 @@ public static void main(String[] args) {
 // 
 	scan.close();
 		util.ll.file(address1);
+		
  }
+ 
 }

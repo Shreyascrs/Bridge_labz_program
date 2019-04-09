@@ -1,6 +1,5 @@
 package com.bridgelabz.datastructures;
 
-
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -8,9 +7,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.util.Scanner;
 
-
-
-
+import com.bridgelabz.datastructures.Utilityds.linkedlist;
 
 /**
  * @purpose 	:unorder and ordered list using linked list
@@ -28,12 +25,12 @@ public class Utilityds {
 	 * @param <T>
 	 */
 	@SuppressWarnings("rawtypes")
-	public class Node<T>{							//to create a new node
+	static public class Node<T>{							//to create a new node
 		 T data;
 		 Node next;
 	}
 	@SuppressWarnings("rawtypes")
-	public class linkedlist<T>
+	public static class linkedlist<T>
 	{
 		 Node head;									//creating head node
 		public int size=0;
@@ -57,6 +54,7 @@ public class Utilityds {
 			 }
 			 else
 			 {
+				 
 				 Node n=head;					//new node to traversal
 				 while(n.next!=null)			//loop for finding last node
 				 {
@@ -109,6 +107,7 @@ public class Utilityds {
 			 }
 			 	 return false;
 			 }
+		 		
 		 
 		 		/**
 				 * 
@@ -121,22 +120,25 @@ public class Utilityds {
 		 {
 			 Node x=head;
 			 Node y=head.next;
+			
 			 
 			 while(x.next!=null)
 			 {
-				 if(head.data.equals(key))       //checking wether element is same or not
+				 if(head.data.equals(key))       //checking wether first element is same or not
 				 {
+					 System.out.println("the deleted element is "+head.data);
 					 head=head.next;
 					 size--;
 					break; 
 				 }
-				 if(y.data.equals(key)==true&&y.next==null)
+				 if(y.data.equals(key)==true&&y.next==null)	//if the element is last deleting last node
 				 {
+					 System.out.println("the deleted item is "+y.data);
 					 x.next=null;
 					 size--;
 					 break;
 				 }
-				 if(y.data.equals(key)==true)
+				 if(y.data.equals(key)==true)		// else other node contains data delete it 
 				 {
 					 System.out.println("the deleted item is "+y.data);
 					 size--;
@@ -152,6 +154,7 @@ public class Utilityds {
 				 
 			 }
 		 }
+		 
 		 @SuppressWarnings("unchecked")
 		 		void insert(int index,T value)
 		 {
@@ -296,6 +299,7 @@ public class Utilityds {
 	
 	@SuppressWarnings("rawtypes")
 	linkedlist ll=new linkedlist();
+	
 	// <---------------------------------------------------------------------------------------------->
 	/**
 	 * @purpose 	:Simple Balanced Parentheses
@@ -364,11 +368,12 @@ public class Utilityds {
 			return size; // return size
 		}
 		
+		@SuppressWarnings({ "unchecked", "rawtypes", "unused" })
 		public T pop() {
 			
 			if (size == 0) // checking condition wheather top is null are not
 			{
-				System.out.println("stack is empty");
+				System.out.println("invalid expression ");
 				System.exit(0);
 
 			}
@@ -496,28 +501,28 @@ public class Utilityds {
 	 */
 	public class dequeue<T> 
 	{
-		int size=0;
+		int size=0;	// to know the size
 		@SuppressWarnings("hiding")
 		class Node<T>{
 			T data;
 			@SuppressWarnings("rawtypes")
-			Node prev;
+			Node prev;	// to hold prevese node 
 			
 			@SuppressWarnings("rawtypes")
-			Node next;
+			Node next;	// to hold the next node address
 		}
 		@SuppressWarnings("rawtypes")
 		Node front;
 		@SuppressWarnings("rawtypes")
 		Node rear;
 		@SuppressWarnings({ "unchecked", "rawtypes" })
-		public void addrear(T data)
+		public void addrear(T data)		// to add the data to queue
 		{
-			Node node=new Node();
-			node.data=data;
-			node.prev=null;
-			node.next=null;
-			if(rear==null)
+			Node node=new Node();		// to create new node
+			node.data=data;				// to store node data
+			node.prev=null;				// to store previous node 
+			node.next=null;				// to store next node
+			if(rear==null)				// to make first if first is null
 			{
 				rear=node;
 				front=node;
@@ -525,7 +530,7 @@ public class Utilityds {
 			}else
 			{
 				Node n=front;
-				while(n.next!=null)
+				while(n.next!=null)		// to add node at last
 				{
 					n.prev=n;
 					n=n.next;
@@ -690,7 +695,3 @@ public class Utilityds {
 	}
 	
 }
-	
-
-	
- 
