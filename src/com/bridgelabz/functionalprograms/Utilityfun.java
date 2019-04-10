@@ -2,6 +2,7 @@ package com.bridgelabz.functionalprograms;
 
 public class Utilityfun {
 	/////////////////////////////////////////gambler///////////////////////////////
+	
 public static void gamb(int $stake, int $goal, int num) {
 		
 		int win=0;

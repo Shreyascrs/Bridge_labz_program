@@ -1,0 +1,18 @@
+{"stock":[
+		{
+			"stock_name":"yesbank",
+			"no_of_stocks":50,
+			"share_price":275
+		},
+		{
+			"stock_name":"idfc",
+			"no_of_stocks":50,
+			"share_price":46
+		},
+		{
+			"stock_name":"eichermtr",
+			"no_of_stocks":50,
+			"share_price":2000
+		}
+	]
+}

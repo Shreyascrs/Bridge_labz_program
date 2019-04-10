@@ -68,6 +68,7 @@ public static void main(String[] args)  {
 			int price=node.findPath("price").asInt();				// accessing price value
 			
 			System.out.println("name\t:"+name+"\nprice\t:"+price+"\nweight\t:"+weight);//printing the accessed value
+			System.out.println("total price "+(price*weight));
 			System.out.println();
 		}
 	} catch (IOException e) {
